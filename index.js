@@ -3,7 +3,7 @@ require('dotenv').config()
 
 const users = require('./routes/Users')
 const app = express()
-const router = express.Router()
+app.use(express.json())
 const port = process.env.PORT
 
 
